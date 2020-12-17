@@ -28,7 +28,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/sweetalert2/dist/sweetalert2.css"
             ],
             "scripts": []
           },
@@ -124,5 +126,8 @@
       }
     }
   },
-  "defaultProject": "final-activity"
+  "defaultProject": "final-activity",
+  "cli": {
+    "analytics": "ce33a024-0023-4d7e-98e3-b309ac71d914"
+  }
 }

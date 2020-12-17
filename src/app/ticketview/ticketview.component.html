@@ -1,0 +1,19 @@
+<h1>Tickets</h1>
+<hr>
+<h2>[{{ ticket?.template.alias }}] {{ ticket?.template.name }}</h2>
+<h2>#{{ ticket?.serial }}</h2>
+<ul class="list-group">
+  <li class="list-group-item">
+    Submitted at: {{ ticket?.created_at }}
+  </li>
+  <li class="list-group-item">
+    Priority: {{ ticket?.priority }}
+  </li>
+  <li class="list-group-item">
+    Status: {{ ticket?.status }}
+  </li>
+  <li class="list-group-item">
+    Assignee: {{ ticket?.assignee || "Unassigned" }}
+  </li>
+</ul>
+<button class="btn btn-dark mt-1" [routerLink]="'/tickets'">Back</button>

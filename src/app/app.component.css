@@ -1,0 +1,10 @@
+/* app-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+} */
+.container{
+  position: relative;
+  min-height: 80vh;
+  margin-top: 10px;
+}
