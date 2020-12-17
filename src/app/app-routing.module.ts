@@ -7,6 +7,7 @@ import { TwoColumnComponent } from './two-column/two-column.component';
 import { LoginComponent } from './login/login.component';
 import { TicketviewComponent } from './ticketview/ticketview.component';
 import { MyprofileComponent } from './myprofile/myprofile.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   { path: '', component: TwoColumnComponent, children: [
@@ -18,7 +19,7 @@ const routes: Routes = [
   },
   { path: 'about-us', component: AboutComponent, data :{ title: 'About us'}},
   { path: 'login', component: LoginComponent },
-  { path: '**', redirectTo: 'not-found' }
+  { path: '**', component: NotFoundComponent }
 ];
 
 @NgModule({
