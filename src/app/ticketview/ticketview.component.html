@@ -4,7 +4,7 @@
 <h2>#{{ ticket?.serial }}</h2>
 <ul class="list-group">
   <li class="list-group-item">
-    Submitted at: {{ ticket?.created_at }}
+    Submitted at: {{ ticket?.created_at | date:'dd-MMM-yyyy' }}
   </li>
   <li class="list-group-item">
     Priority: {{ ticket?.priority }}
