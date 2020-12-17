@@ -11,7 +11,7 @@ export class AppComponent {
   public constructor(private titleService: Title) { }
 
   public setTitle(newTitle: string) {
-    const extraTitle = this.titleService.getTitle()
+    this.titleService.getTitle()
     // this.title = 'final-activity | '+extraTitle;
   }
 }
