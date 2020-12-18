@@ -34,6 +34,7 @@ export class GlobalService {
       },
       (error) => {
         console.log("error response", error);
+        this.alertWithError(error.error.message);
       }
     );
   }

@@ -22,7 +22,7 @@ export class TicketsComponent implements OnInit {
     //   this.route.navigate(['/']);
     // }
 
-    this.titleService.setTitle('Tickets');
+    this.titleService.setTitle('FinalActivity | Tickets');
 
     this._service.httpGetMyTickets();
 

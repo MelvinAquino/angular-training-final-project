@@ -35,7 +35,7 @@ export class MyprofileComponent implements OnInit {
       this.route.navigate(['/']);
     }
 
-    this.titleService.setTitle('My Profile');
+    this.titleService.setTitle('FinalActivity | My Profile');
 
     this._service.isLogged.subscribe(
       (logged: any) => {
@@ -83,7 +83,7 @@ export class MyprofileComponent implements OnInit {
           first_name: formValues.first_name,
           last_name: formValues.last_name,
           job_title: formValues.job_title,
-          mobile_number: formValues.job_title,
+          mobile_number: formValues.mobile_number,
           timezone: 'Asia/Manila'
         },
         current_password: '',

@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
       password: new FormControl('', [Validators.required])
     });
 
-    this.titleService.setTitle('Log in');
+    this.titleService.setTitle('FinalActivity | Log in');
   }
 
   onLogin(): void {

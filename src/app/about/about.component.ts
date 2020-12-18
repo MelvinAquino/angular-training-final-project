@@ -11,7 +11,7 @@ export class AboutComponent implements OnInit {
   public constructor(private titleService: Title) { }
 
   ngOnInit(): void {
-    this.titleService.setTitle('About Us');
+    this.titleService.setTitle('FinalActivity | About Us');
   }
 
 }
