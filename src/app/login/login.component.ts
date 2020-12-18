@@ -46,7 +46,6 @@ export class LoginComponent implements OnInit {
         (response: any) => {
           const token = response.token;
           this._service.setToken(token);
-          // console.log('token from service', this._service.getToken());
 
           if(this._service.getToken()){
             this.route.navigate(['/']);
